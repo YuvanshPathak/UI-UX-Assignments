@@ -1,0 +1,129 @@
+/* Travel Agency Website CSS */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f8fb;
+}
+header {
+  background: #0077b6;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+nav {
+  background: #023e8a;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px 0;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+nav a:hover {
+  background: #0096c7;
+}
+.banner {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+}
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background: #90e0ef;
+}
+tr:nth-child(even) {
+  background: #f1f9ff;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background: #0096c7;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.gallery-item {
+  background: #e0f7fa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  text-align: center;
+}
+.gallery-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.social-links a {
+  color: #0077b6;
+  font-size: 24px;
+  text-decoration: none;
+}
+ul.tips {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.tips li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  .gallery-item img {
+    height: 100px;
+  }
+}

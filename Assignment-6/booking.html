@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency - Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Book Your Trip</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="packages.html">Packages</a>
+    <a href="booking.html">Booking</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+  <div class="container">
+    <h2>Booking Form</h2>
+    <form id="bookingForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <div style="display:flex;gap:10px;">
+        <div style="flex:1">
+          <label for="checkin">Check-in:</label>
+          <input type="date" id="checkin" name="checkin" required>
+        </div>
+        <div style="flex:1">
+          <label for="checkout">Check-out:</label>
+          <input type="date" id="checkout" name="checkout" required>
+        </div>
+      </div>
+
+      <label for="guests">Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" value="1">
+
+      <label for="packageSelect">Package:</label>
+      <select id="packageSelect" name="package" required data-packages="true">
+        <option value="">Select Package</option>
+      </select>
+
+      <label for="promo">Promo Code:</label>
+      <input type="text" id="promo" name="promo" placeholder="Enter code (e.g. EARLYBIRD)">
+
+      <label for="requests">Special Requests:</label>
+      <textarea id="requests" name="requests" rows="3"></textarea>
+
+      <div>
+        <strong>Estimated Total: </strong><span id="estimate">—</span>
+      </div>
+
+      <button type="submit" id="submitBtn" disabled>Book Now</button>
+    </form>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
